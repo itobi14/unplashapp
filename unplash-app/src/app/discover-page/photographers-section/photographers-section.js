@@ -31,7 +31,7 @@ import React from 'react';
 //     );
 // }
 
-function PhotographersSection({ photographers }) {
+function PhotographersSection() {
 
     return (
         <div className={styles.photographersSection}>

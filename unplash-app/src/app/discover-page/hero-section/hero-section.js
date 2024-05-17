@@ -26,7 +26,7 @@ function HeroSection() {
                 </div>
             </div>
 
-            <SearchBar />
+            <SearchBar/>
         </div>
     );
 }

@@ -8,7 +8,7 @@ function SearchBar() {
                 <input
                     type="search"
                     className={styles.searchBar}
-                    placeholder="Search photographers..."
+                    placeholder="Search..."
                 />
                 <button
                     className={styles.searchBtn}

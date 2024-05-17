@@ -191,6 +191,8 @@
   border: none;
   outline: none;
   background: #0B0B0B;
+  opacity: .85;
+  transition: .2s ease-in-out;
   cursor: pointer;
 
   font-family: Inter, sans-serif;
@@ -198,6 +200,10 @@
   font-weight: 300;
   text-transform: uppercase;
   color: white;
+}
+
+.searchBtn:hover {
+  opacity: 1;
 }
 
 /* ------------------------------------------------------------------------------------------- */
@@ -230,7 +236,8 @@
   margin-top: 3rem;
 }
 
-.photographerCard {
+.photographerCard,
+.photosCard {
   height: 372px;
   width: 203px;
   border: 1px solid #CCCCCC;
@@ -274,39 +281,130 @@
   color: #919191;
 }
 
+/* ------------------------------------------------------------------------------------------- */
 
+.detailBarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 5%;
+  width: 100%;
+  z-index: 99;
+}
 
+.detailBar {
+  display: flex;
+  gap: 2rem;
+  height: 128px;
+  width: 60%;
+  background: white;
+  box-shadow: 0 8px 16px 0 #0000001A;
+}
 
+.detailBarImg {
+  height: 100%;
+  width: 12%;
+  background: lightcyan;
+}
 
+.detailUserContainer {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  border-right: 2px solid #E0E0E0;
+  padding-right: 2rem;
+  margin: 1rem 0;
+}
 
+.detailTitle {
+  font-family: Lora, sans-serif ;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #0B0B0B;
+}
 
+.detailUserWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
 
+.detailUserImg {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #F5F5F5;
+}
 
+.detailUserName {
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #919191;
+}
 
+.detailStatsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
 
+.detailStatsCount {
+  font-family: Lora, sans-serif ;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #0B0B0B;
+}
+
+.detailStatsText {
+  font-family: Inter, sans-serif;
+  font-size: .7rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #919191;
+}
+
+.detailDownloadContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.detailDownloadBtn {
+  height: 40px;
+  width: 180px;
+  border: none;
+  outline: none;
+  background: #0B0B0B;;
+  opacity: .85;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+}
+
+.detailDownloadBtn:hover {
+  opacity: 1;
+}
+
+/* ------------------------------------------------------------------------------------------- */
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
-  .grid {
-    grid-template-columns: repeat(2, 50%);
-  }
+
 }
 
 @media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
-  }
 
-  .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
-  }
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
 }
