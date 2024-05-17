@@ -190,7 +190,7 @@
   width: 200px;
   border: none;
   outline: none;
-  background: #222222;
+  background: #0B0B0B;
   cursor: pointer;
 
   font-family: Inter, sans-serif;
@@ -202,9 +202,38 @@
 
 /* ------------------------------------------------------------------------------------------- */
 
-.photographersSection {
-  height: 1000px;
-  background: lightblue;
+.photographersSection,
+.photosSection {
+  width: 100%;
+  padding: 4rem 5rem;
+}
+
+.photographersTitle,
+.photosTitle {
+  font-family: Inter, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 100%;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #E0E0E0;
+  color: #0B0B0B;
+}
+
+.photographersContainer,
+.photosContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.photographerCard {
+  height: 372px;
+  width: 203px;
+  border: 1px solid #CCCCCC;
+  box-shadow: 0 2px 18px 0 #0000001A;
 }
 
 
