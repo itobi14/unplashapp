@@ -39,11 +39,7 @@ function PhotographersSection() {
             <ul className={styles.photographersContainer}>
                 <li className={styles.photographerCard}>
                     <div className={styles.photographerImgContainer}>
-                        <img
-                            className={styles.photographerImg}
-                            src=""
-                            alt="Photographer"
-                        />
+                        {/*<img className={styles.photographerImg} src="" alt="Photographer"/>*/}
                     </div>
                     <div className={styles.photographerInfoContainer}>
                         <h4 className={styles.photographerName}>Test</h4>
