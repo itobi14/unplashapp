@@ -3,7 +3,8 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <main className={styles.main}>
-        <div className={styles.heroContent}>
+
+        <div className={styles.heroSection}>
             <img src="/backgroundImg.jpg" className={styles.backgroundImg} alt="Background Img"/>
 
             <div className={styles.navbar}>
@@ -32,6 +33,11 @@ export default function Home() {
                 </div>
             </div>
         </div>
+
+        <div className={styles.photographersSection}>
+
+        </div>
+
     </main>
   );
 }
