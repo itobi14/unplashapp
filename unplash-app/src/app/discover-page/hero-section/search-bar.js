@@ -1,16 +1,18 @@
+import styles from "@/app/page.module.css";
+
 function SearchBar() {
 
     return (
-        <div className="search-section">
-            <div className="search-wrapper">
+        <div className={styles.searchBarContainer}>
+            <div className={styles.searchWrapper}>
                 <input
                     type="search"
-                    className="search-bar"
+                    className={styles.searchBar}
                     placeholder="Search photographers..."
                 />
-                <button className="search-btn">
-                    Search
-                </button>
+                <button
+                    className={styles.searchBtn}
+                >Search</button>
             </div>
         </div>
     );

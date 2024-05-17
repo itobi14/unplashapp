@@ -1,22 +1,38 @@
-const axios = require('axios');
+import axios from 'axios';
 
 const unsplashBaseUrl = 'https://api.unsplash.com';
-const accessKey = 'NLECKtEQTyj4jrZiSSqrkY41mweZa6N_NA__btZFaDY';
+const apiKey = 'NLECKtEQTyj4jrZiSSqrkY41mweZa6N_NA__btZFaDY';
 
-const searchPhotographers = async (query) => {
+const searchPhotos = async (query) => {
     try {
-        const response = await axios.get(`${unsplashBaseUrl}/search/users`, {
+        const response = await axios.get(`${unsplashBaseUrl}/search/photos`, {
             params: {
                 query,
                 per_page: 4,
-                client_id: accessKey,
+                client_id: apiKey,
             },
         });
         return response.data.results;
     } catch (error) {
-        console.error('Error fetching photographers:', error);
+        console.error('Error fetching data:', error);
         return [];
     }
 };
 
-module.exports = { searchPhotographers };
+const getRandomPhotos = async () => {
+    try {
+        const response = await axios.get(`${unsplashBaseUrl}/photos/random`, {
+            params: {
+                per_page: 4,
+                client_id: apiKey,
+            },
+        });
+        return response.data.results;
+    } catch (error) {
+        console.error('Error fetching data:', error);
+        return [];
+    }
+};
+
+module.exports = { getRandomPhotos };
+module.exports = { searchPhotos };

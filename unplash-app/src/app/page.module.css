@@ -237,6 +237,43 @@
   box-shadow: 0 2px 18px 0 #0000001A;
 }
 
+.photographerImgContainer {
+  height: 75%;
+  width: 100%;
+  background: lightcyan;
+}
+
+.photographerImg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.photographerInfoContainer {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: .5rem;
+  padding: 0 2rem;
+  height: 25%;
+  width: 100%;
+}
+
+.photographerName {
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0B0B0B;
+}
+
+.photographerPhotoCount {
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #919191;
+}
+
 
 
 
